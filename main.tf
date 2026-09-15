@@ -11,3 +11,7 @@ provider "databricks" {
   host  = var.databricks_host
   token = var.databricks_token
 }
+
+resource "databricks_repo" "test" {
+  url = "https://github.com/AjohAjoh/NewRepository"
+}
